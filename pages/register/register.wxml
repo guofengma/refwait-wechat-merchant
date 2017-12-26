@@ -1,0 +1,15 @@
+<!--pages/register/register.wxml-->
+<form bindsubmit='register'>
+  OPENID：<input name='openid' class='input-box' type='text'></input>
+  NAME：<input name='name' class='input-box' type='text' value='{{name}}'></input>
+  TELEPHONE：<input name='telephone' class='input-box' type='text'></input>
+  MOBILE_PHONE：<input name='mobilePhone' class='input-box' type='text'></input>
+  ADDRESS：<input name='address' class='input-box' type='text' value='{{address}}'></input>
+  LONGITUDE：<input name='longitude' class='input-box' type='text' value='{{longitude}}'></input>
+  LATITUDE：<input name='latitude' class='input-box' type='text' value='{{latitude}}'></input>
+  ICON：<input name='iconUrl' class='input-box' type='text' value='{{iconUrl}}'></input>
+  <image src='{{img}}'></image>
+  <button bindtap='getLocation'>获取位置信息</button>
+  <button bindtap='chooseImage'>选择图片</button>
+  <button form-type='submit'>注册</button>
+</form>
